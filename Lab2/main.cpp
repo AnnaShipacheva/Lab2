@@ -4,8 +4,8 @@
 
 int main(int argc, char* argv[])
 {
-	//в файлы test для демонстрации выводятся аргументы командной строки и обработанные исключения, если есть 
-	//testFile.open("test0.txt"); //для случая argc==1;
+	//cmd args and handled exceptions are output to files named "test_"
+	//testFile.open("test0.txt"); //if argc==1;
 	/*string nameF = (string)"test_" + (string)argv[1];
 	testFile.open(nameF);
 	for (int i = 0; i < argc; ++i)

@@ -1,8 +1,8 @@
 #ifndef BLOCKPROGRAM_H
 #define BLOCKPROGRAM_H
 
-#include <utility> // для move()
-#include <memory> //для shared_ptr
+#include <utility> // for move()
+#include <memory> //for shared_ptr
 #include "Worker.h"
 #include "ReadFileBlock.h"
 #include "WriteFileBlock.h"

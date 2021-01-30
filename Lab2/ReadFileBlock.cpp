@@ -6,7 +6,7 @@ ReadFileBlock::ReadFileBlock(string &ifile)
 }
 
 void ReadFileBlock::readFile(string input, vector<string> &output) 
-//используется если имя входного файла было передано аргументом командной строки, в схеме нет чтения файла
+//used if name input file was in cmd args, there is no readfile block in workflow
 {
 	if (!Validator::fileExists(input))
 		Validator::badFile("File " + input + "does not exist or can not open");
@@ -20,7 +20,7 @@ void ReadFileBlock::readFile(string input, vector<string> &output)
 }
 
 bool ReadFileBlock::execute(vector<string> *input, vector<string> *output, bool &haveInput, bool &haveOutput, unsigned int index) 
-//используется если в схеме есть блок чтения файла
+//used if name input file was in workflow
 {
 	if (haveInput)
 		throw logic_error("non null input on read file: " + m_args[0] + ". Block ingex: " + to_string(index));

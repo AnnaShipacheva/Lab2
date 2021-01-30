@@ -6,7 +6,7 @@ WriteFileBlock::WriteFileBlock(string &ofile)
 }
 
 void WriteFileBlock::writeFile(string output, vector<string> &text)
-//используется если имя выходного задается через командную строку, в схеме нет блока записи в файл
+//used if name output file was in cmd args, there is no writefile block in workflow
 {
 	ofstream ofile(output);
 
@@ -21,7 +21,7 @@ void WriteFileBlock::writeFile(string output, vector<string> &text)
 }
 
 bool WriteFileBlock::execute(vector<string> *input, vector<string> *output, bool &haveInput, bool &haveOutput, unsigned int index)
-//используется если в схеме есть блок записи в файл
+//used if name output file was in workflow
 {
 	if (!haveInput)
 		throw logic_error("null input on wtire file: " + m_args[0] + ". Block index: " + to_string(index));
