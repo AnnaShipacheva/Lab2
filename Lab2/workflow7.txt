@@ -1,0 +1,9 @@
+desc
+1 = replace abracadabra cadabraabra
+2 = grep braab
+3 = sort
+3 = dump out7_1.txt
+0 = readfile in.txt
+5 = writefile out7.txt
+csed
+0 -> 1 -> 2 -> 3 -> 5

@@ -1,0 +1,2 @@
+E:\Рабочая\Прога\2 курс\Лабы\lab2\Lab2\Debug\executor.exe workflow6.txt 
+Bad program file. Haven't 'desc' at block part.
